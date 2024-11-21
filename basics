@@ -1,0 +1,23 @@
+# Flash cards
+
+answer = input("What data type is the value 6.3? ")
+score = 0
+
+if answer == "float":
+    score = score + 1
+    print("You got it!")
+elif answer == "integer":
+    print("Almost! But remember there is a decimal.")
+else: 
+    print("That's incorrect, The correct answer is float")
+
+answer = int(input("What does len(\"hi\") evaluate to? "))
+if answer == 2:
+    score = score + 1
+    print("You got it!")
+else:
+    print("That's incorrect, the correct answer is 2")
+
+print(score)
+
+# 
