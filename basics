@@ -57,3 +57,25 @@ else:
 if bow == 3:
     avatar.draw_bow()
 
+
+#### Dice averages
+
+import random
+
+roll = 0
+roll_count = int(input("How many times would you like to roll the dice?: "))
+average = 0
+
+while roll < roll_count:
+    # Roll two six-sided dice.
+    first_die = random.randint(1, 6)
+    second_die = random.randint(1, 6)
+    
+    dice_sum = first_die + second_die
+    print("You rolled a " + str(dice_sum) + "!")
+
+    roll = roll + 1
+    average = average + dice_sum
+
+average = average / roll_count
+print(average)
